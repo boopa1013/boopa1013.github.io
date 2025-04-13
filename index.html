@@ -1,97 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A brief description of your website">
-    <title>Your Website Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief description of your website">
+  <title>Your Website Title</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Your Custom Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- Your Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- External JavaScript (Your custom script) -->
-    <script src="script.js" defer></script>
+  <!-- External JavaScript (Your custom script) -->
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Boopa's Playground</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-        
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Boopa's Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main class="container py-4">
+    <!-- Home Section -->
+    <section id="home" class="mb-5">
+      <h1 class="display-4">Welcome to Boopa's Playground!</h1>
+    </section>
+
+    <!-- About Section with Carousel -->
+    <section id="about" class="mb-5">
+      <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image1.jpg" class="d-block w-100" alt="First Slide">
+          </div>
+          <div class="carousel-item">
+            <img src="image2.jpg" class="d-block w-100" alt="Second Slide">
+          </div>
+          <div class="carousel-item">
+            <img src="image3.jpg" class="d-block w-100" alt="Third Slide">
           </div>
         </div>
-      </nav>
-      
 
-    <!-- Main Content Section -->
-    <main class="container py-4">
-        <section id="home" class="mb-5">
-            <h1 class="display-4">Welcome to Your Boopas Playground!</h1>
-            
-        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-        <section id="about" class="mb-5">
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="image.jpg" class="d-block w-100" alt="James">
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-  </button>
-            </div>
-            <h2>About Me</h2>
-            <p>My name is Brandon St. Louis. I'm originally from southeastern Michigan in a little city named Lapeer.</p>
-            <img src="Lapeer.jpg" alt="Lapeer" class="img-fluid rounded">
-            <p>After my time in Lapeer I slowly became a gaming legend, my game of choice was marvel rivals.</p>
-            <video width="500" height="500" controls>
-                <source src="new.mp4" type="video/mp4">
-            </video>
-        </section>
+      <h2>About Me</h2>
+      <p>My name is Brandon St. Louis. I'm originally from southeastern Michigan in a little city named Lapeer.</p>
+      <img src="Lapeer.jpg" alt="Lapeer" class="img-fluid rounded mb-3">
+      <p>After my time in Lapeer I slowly became a gaming legend, my game of choice was Marvel Rivals.</p>
+      <video width="500" height="500" controls>
+        <source src="new.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
-        <section id="services" class="mb-5">
-        </section>
+    <!-- Services Section (empty) -->
+    <section id="services" class="mb-5">
+    </section>
 
-        <section id="contact">
-        </section>
-    </main>
+    <!-- Contact Section (empty) -->
+    <section id="contact">
+    </section>
+  </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2025 Your Website. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <p>&copy; 2025 Your Website. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
